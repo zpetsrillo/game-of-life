@@ -1,0 +1,13 @@
+<!-- <app-cell status="alive"></app-cell>
+<app-cell status="dead"></app-cell> -->
+
+<div class="fixer">
+  <div class="container">
+    <app-cell *ngFor="let cell of cells" alive="{{ cell }}"></app-cell>
+  </div>
+</div>
+<div class="button-bar">
+  <div class="button" (click)="restart()">Restart</div>
+  <div class="button" (click)="pause()">{{ paused ? "Play" : "Pause" }}</div>
+  <div class="button" *ngIf="paused" (click)="step()">Step</div>
+</div>
