@@ -9,9 +9,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "scully": "scully",
-    "scully:serve": "scully serve"
+    "scully:serve": "scully serve",
+    "deploy": "gh-pages -d dist/static"
   },
   "private": true,
+  "homepage": "https://zpetsrillo.github.io/game-of-life",
   "dependencies": {
     "@angular/animations": "~9.1.11",
     "@angular/common": "~9.1.11",
@@ -24,6 +26,7 @@
     "@scullyio/init": "^1.0.0-beta.3",
     "@scullyio/ng-lib": "^1.0.0-beta.2",
     "@scullyio/scully": "^1.0.0-beta.2",
+    "gh-pages": "^3.1.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
